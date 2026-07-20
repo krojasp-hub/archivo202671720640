@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios para el Hogar</title>
+    <style>
+        /* Configuración General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Desplazamiento suave entre secciones */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            padding-top: 70px; /* Espacio para que el menú fijo no tape el contenido */
+        }
+
+        /* Menú de Navegación Fijo */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            margin: 0 12px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b8926a; /* Color dorado/madera elegante */
+        }
+
+        /* Estructura de las Secciones */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #222;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Cuadrícula para las 6 imágenes */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .tarjeta-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .tarjeta-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .tarjeta-item p {
+            padding: 15px;
+            text-align: center;
+            font-weight: 500;
+            color: #666;
+        }
+
+        /* Botón para cambiar a la siguiente sección */
+        .contenedor-boton {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .btn-siguiente {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .btn-siguiente:hover {
+            background-color: #b8926a;
+            transform: scale(1.05);
+        }
+
+        /* Estilo especial para el botón final */
+        .btn-inicio {
+            background-color: #b8926a;
+        }
+        .btn-inicio:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <nav>
+            <a href="#comedores">Comedores</a>
+            <a href="#salas">Salas</a>
+            <a href="#lamparas">Lámparas</a>
+            <a href="#camas">Camas</a>
+            <a href="#guardaropas">Guardaropas</a>
+            <a href="#banos">Baños</a>
+            <a href="#Decoracion">Decoracion</a>
+            <a href="#Jarrones">Jarrones</a>
+
+        </nav>
+    </header>
+
+   
+    <section id="comedores">
+        <h2>Juegos de Comedor</h2>
+        <div class="galeria">
+            <div class="tarjeta-item"><img src="assets/img/comedor.jfif" alt="Comedor"><p>Comedor Moderno Minimalista</p></div>
+            <div class="tarjeta-item"><img src="assets/img/comedor_madera.jfif" alt="Comedor"><p>Comedor Moderno de Madera</p></div>
+            <div class="tarjeta-item"><img src="assets/img/comedor_plas.jfif" alt="Comedor"><p>Estilo Rústico de Plastico</p></div>
+            <div class="tarjeta-item"><img src="assets/img/comedor_sillon.jfif" alt="Comedor"><p>Comedor Estilo Sofa</p></div>
+            <div class="tarjeta-item"><img src="assets/img/comedor_amue.jfif" alt="Comedor"><p>Mesa Moderno Casual</p></div>
+            <div class="tarjeta-item"><img src="assets/img/comedor_meta.jfif" alt="Comedor"><p>Comedor Urbano Industrial</p></div>
+    
+          </div>
+        <div class="contenedor-boton">
+            <a href="#salas" class="btn-siguiente">Ver Juegos de Sala &rarr;</a>
+        </div>
+    </section>
+
+    
+    <section id="salas">
+        <h2>Juegos de Sala (Muebles)</h2>
+        <div class="galeria">
+            <div class="tarjeta-item"><img src="assets/img/sala1.jfif" alt="Muebles"><p>Sofá Modular Confort</p></div>
+            <div class="tarjeta-item"><img src="assets/img/sala2.jfif" alt="Muebles"><p>Sala de Estar Escandinava</p></div>
+            <div class="tarjeta-item"><img src="assets/img/sala3.jfif" alt="Muebles"><p>Muebles de Terciopelo</p></div>
+            <div class="tarjeta-item"><img src="assets/img/sala4.jfif" alt="Muebles"><p>Estilo Loft Industrial</p></div>
+            <div class="tarjeta-item"><img src="assets/img/sala5.jfif" alt="Muebles "><p>Sofá  Premium</p></div>
+            <div class="tarjeta-item"><img src="assets/img/sala6.jfif" alt="Muebles"><p>Diseño de Interiores Vivo</p></div>
+        </div>
+        <div class="contenedor-boton">
+            <a href="#lamparas" class="btn-siguiente">Ver Lámparas &rarr;</a>
+        </div>
+    </section>
+
+    
+    <section id="lamparas">
+        <h2>Diseño de Lamparas</h2>
+        <div class="galeria">
+            <div class="tarjeta-item"><img src="assets/img/Lampara.jfif" alt="Lámpara 1"><p>Lámpara de Techo Moderna</p></div>
+            <div class="tarjeta-item"><img src="assets/img/lampara2.jfif" alt="Lámpara 2"><p>Iluminación Colgante de Cristal</p></div>
+            <div class="tarjeta-item"><img src="assets/img/lampara3.jfif" alt="Lámpara 3"><p>Lámpara de Pie Minimalista</p></div>
+            <div class="tarjeta-item"><img src="assets/img/lampara4.jfif" alt="Lámpara 4"><p>Focos Geométricos LED</p></div>
+            <div class="tarjeta-item"><img src="assets/img/lampara5.jfif" alt="Lámpara 5"><p>Diseño Industrial de Cobre</p></div>
+            <div class="tarjeta-item"><img src="assets/img/lampara6.jfif" alt="Lámpara 6"><p>Lámpara de Mesa de Noche</p></div>
+        </div>
+        <div class="contenedor-boton">
+            <a href="#camas" class="btn-siguiente">Ver Camas &rarr;</a>
+        </div>
+    </section>
+
+    
+    <section id="camas">
+        <h2>Camas</h2>
+        <div class="galeria">
+            <div class="tarjeta-item"><img src="assets/img/cama1.jfif" alt="Cama 1"><p>Cama King Size de Lujo</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cama2.jfif" alt="Cama 2"><p>Dormitorio Suite Moderno</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cama3.jfif" alt="Cama 3"><p>Estilo Japandi Relajante</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cama4.jfif" alt="Cama 4"><p>Cama con Cabecera Tapizada</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cama5.jfif" alt="Cama 5"><p>Habitación Juvenil Funcional</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cama6.jfif" alt="Cama 6"><p>Diseño Clásico de Madera</p></div>
+        </div>
+        <div class="contenedor-boton">
+            <a href="#guardaropas" class="btn-siguiente">Ver Guardaropas &rarr;</a>
+        </div>
+    </section>
+
+   
+    <section id="guardaropas">
+        <h2>Guardaropas (Closets)</h2>
+        <div class="galeria">
+            <div class="tarjeta-item"><img src="assets/img/closet1.jfif" alt="Closet 1"><p>Ropero Empotrado Moderno</p></div>
+            <div class="tarjeta-item"><img src="assets/img/closet2.jfif" alt="Closet 2"><p>Walk-in Closet Abierto</p></div>
+             <div class="tarjeta-item"><img src="assets/img/closet3.jfif" alt="Cama 3"><p>Estilo Japandi Relajante</p></div>
+            <div class="tarjeta-item"><img src="assets/img/closet4.jfif" alt="Cama 4"><p>Cama con Cabecera Tapizada</p></div>
+            <div class="tarjeta-item"><img src="assets/img/closet5.jfif" alt="Cama 5"><p>Habitación Juvenil Funcional</p></div>
+            <div class="tarjeta-item"><img src="assets/img/closet6.jfif" alt="Cama 6"><p>Diseño Clásico de Madera</p></div>
+        </div>
+        <div class="contenedor-boton">
+            <a href="#Baños" class="btn-siguiente">Ver Guardaropas &rarr;</a>
+        </div>
+    </section>
+
+    <section id="Baños">
+        <h2>Baños</h2>
+        <div class="galeria">
+            <div class="tarjeta-item"><img src="assets/img/baño1.jfif" alt="Baño"><p>Baño Size de Lujo</p></div>
+            <div class="tarjeta-item"><img src="assets/img/baño2.jfif" alt="Baño"><p>Baño Moderno</p></div>
+            <div class="tarjeta-item"><img src="assets/img/baño3.jfif" alt="Baño"><p>Baño EstiloJapandi Relajante</p></div>
+            <div class="tarjeta-item"><img src="assets/img/baño4.jfif" alt="Baño"><p>Baño Diseño Natural</p></div>
+            <div class="tarjeta-item"><img src="assets/img/baño5.jfif" alt="Baño"><p>Baño diseño Rupestre</p></div>
+            <div class="tarjeta-item"><img src="assets/img/baño6.jfif" alt="Baño"><p>Diseño Clásico de Madera</p></div>
+        </div>
+        <div class="contenedor-boton">
+            <a href="#Decoracion" class="btn-siguiente">Ver Guardaropas &rarr;</a>
+        </div>
+    </section>
+
+      <section id="Decoracion">
+        <h2>Decoracion (Cuadros)</h2>
+        <div class="galeria">
+            <div class="tarjeta-item"><img src="assets/img/cuadro1.jfif" alt="Baño"><p>Diseño Clasico</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cuadro2.jfif" alt="Baño"><p>Diseño Moderno</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cuadro3.jfif" alt="Baño"><p>Diseño Moderno clasico</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cuadro4.jfif" alt="Baño"><p>Diseño Abstracto</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cuadro5.jfif" alt="Baño"><p>Diseño Ruspestre clasico</p></div>
+            <div class="tarjeta-item"><img src="assets/img/cuadro6.jfif" alt="Baño"><p>Diseño Clásico de Madera</p></div>
+        </div>
+        <div class="contenedor-boton">
+            <a href="#jarrones" class="btn-siguiente">Ver Guardaropas &rarr;</a>
+        </div>
+    </section>
+
+        <section id="Jarrones">
+        <h2>Jarrones</h2>
+        <div class="galeria">
+            <div class="tarjeta-item"><img src="assets/img/jarro1.jfif" alt="Baño"><p>Jarron Moderno  de Lujo</p></div>
+            <div class="tarjeta-item"><img src="assets/img/jarro2.jfif" alt="Baño"><p>Jarron Moderno Rupestre</p></div>
+            <div class="tarjeta-item"><img src="assets/img/jarro3.jfif" alt="Baño"><p>Jarron Moderno  Relajante</p></div>
+            <div class="tarjeta-item"><img src="assets/img/jarro4.jfif" alt="Baño"><p>Jarron Moderno Tapizada</p></div>
+            <div class="tarjeta-item"><img src="assets/img/jarro5.jfif" alt="Baño"><p>Jarron  Moderno Arcillada Negrillo</p></div>
+            <div class="tarjeta-item"><img src="assets/img/jarro6.jfif" alt="Baño"><p>Jarron  Moderno Arcillado Clasico</p></div>
+        </div>
+        <div class="contenedor-boton">
+            <a href="#g" class="btn-siguiente">Ver Jarrones &rarr;</a>
+        </div>
+    </section>
+
