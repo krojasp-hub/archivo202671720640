@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada</title>
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(180deg, #f7f4ee 0%, #ffffff 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+        }
+        .container {
+            text-align: center;
+            padding: 36px 32px;
+            max-width: 760px;
+            width: min(100%, 720px);
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 24px;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+        }
+        .title {
+            font-size: clamp(3.5rem, 8vw, 5.5rem);
+            margin: 0;
+            letter-spacing: -0.06em;
+            color: #b8926a;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            line-height: 1.75;
+            margin: 24px auto 32px;
+            max-width: 34rem;
+            color: #4d4d4d;
+        }
+        .button-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            border-radius: 999px;
+            border: none;
+            background: #b8926a;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.25s ease, transform 0.25s ease;
+            box-shadow: 0 16px 30px rgba(184, 146, 106, 0.16);
+        }
+        .button-link:hover {
+            background: #92703f;
+            transform: translateY(-2px);
+        }
+        .note {
+            margin-top: 22px;
+            color: #6d6d6d;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 520px) {
+            .container {
+                padding: 28px 20px;
+            }
+            .subtitle {
+                font-size: 1rem;
+                margin-bottom: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">404</h1>
+        <p class="subtitle">No encontramos la página que buscas. Es posible que haya sido movida, eliminada o que la dirección esté escrita incorrectamente.</p>
+        <a href="index.html" class="button-link">Volver al inicio</a>
+        <p class="note">Si necesitas ayuda, revisa la URL o regresa al menú principal.</p>
+    </main>
+</body>
+</html>
